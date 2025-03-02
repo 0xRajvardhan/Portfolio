@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <section className="flex flex-col justify-center items-center text-center px-6 flex-grow relative overflow-hidden pb-16">
+    <section className="flex flex-col justify-center items-center text-center px-6 flex-1 min-h-[60vh] pb-16">
       {/* Heading */}
       <motion.h1
         className="text-4xl sm:text-5xl md:text-6xl font-bold text-white relative"
@@ -34,7 +34,7 @@ const Hero = () => {
       {/* Button */}
       <motion.a
         href="/projects"
-        className="mt-6 px-5 py-2 text-sm md:text-base font-medium text-white bg-white/10 border border-white/20 rounded-xl transition-all shadow-md hover:shadow-orange-500/50 duration-300 hover:scale-110 sm:text-base"
+        className="mt-6 px-5 py-2 text-sm md:text-base font-medium text-white bg-black/10 border border-white/20 rounded-xl transition-all shadow-md hover:shadow-orange-500/50 duration-300 hover:scale-110 sm:text-base"
         initial={{ scale: 0.8 }}
         animate={{ scale: 1 }}
         transition={{ delay: 0.5, type: "spring", stiffness: 200 }}

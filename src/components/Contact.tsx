@@ -42,7 +42,7 @@ const Contact = () => {
       {/* Contact Button */}
       <motion.a
         href="mailto:singhrajvardhan2003@gmail.com"
-        className="mt-6 px-6 py-3 bg-primary text-white rounded-lg shadow-lg hover:shadow-orange-500/50 transition-all duration-300 hover:scale-110"
+        className="mt-6 px-5 py-2 text-sm md:text-base font-medium text-white bg-black/10 border border-white/20 rounded-xl transition-all shadow-md hover:shadow-orange-500/50 duration-300 hover:scale-110 sm:text-base"
         initial={{ scale: 0.8 }}
         animate={{ scale: 1 }}
         transition={{ delay: 0.5, type: "spring", stiffness: 200 }}

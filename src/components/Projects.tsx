@@ -22,7 +22,7 @@ const Projects = () => {
           href={project.link}
           target="_blank"
           rel="noopener noreferrer"
-          className="relative group bg-white/10 border border-white/20 text-white p-6 rounded-2xl shadow-lg backdrop-filter backdrop-blur-lg transition-all block overflow-hidden"
+          className="relative group bg-black/10 border border-white/20 text-white p-6 rounded-2xl shadow-lg backdrop-filter backdrop-blur-lg transition-all block overflow-hidden"
           whileHover={{ y: -5, boxShadow: "0px 10px 20px rgba(255, 140, 0, 0.1)" }}
         >
           {/* Project Image */}

@@ -11,7 +11,7 @@ export default function Footer() {
       transition={{ duration: 0.8, ease: "easeOut" }}
       className="
         relative w-full px-6 py-4 flex flex-col md:flex-row justify-center md:space-x-20 
-        items-center bg-white/10 backdrop-blur-lg shadow-lg rounded-xl border border-white/20 
+        items-center bg-black/10 backdrop-blur-lg shadow-lg rounded-t-lg md:rounded-xl border border-white/20 
         transition-all md:bottom-4 md:left-1/2 md:-translate-x-1/2 md:w-[90%]
       "
     >
