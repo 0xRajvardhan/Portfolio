@@ -4,7 +4,7 @@ import { projects } from "@/data/projects"; // Importing projects from external 
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-16 px-6 relative overflow-hidden">
+    <section id="projects" className="py-16 mb-20 px-6 relative overflow-hidden">
       {/* Heading */}
       <h2 className="text-4xl font-extrabold text-white text-center mb-10 tracking-wide relative">
         My{" "}
