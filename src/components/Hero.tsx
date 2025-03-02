@@ -4,14 +4,6 @@ import { motion } from "framer-motion";
 const Hero = () => {
   return (
     <section className="min-h-[85vh] flex flex-col justify-center items-center text-center px-6 relative overflow-hidden pb-24">
-      {/* Background Animation */}
-      <motion.div
-        className="absolute inset-0 bg-gradient-to-br from-[#ff8a00]/10 via-[#da1b60]/10 to-[#89216b]/10 blur-[80px] sm:blur-[100px] lg:blur-[150px] rounded-full opacity-50"
-        initial={{ scale: 0.5, opacity: 0 }}
-        animate={{ scale: 1.5, opacity: 0.7 }}
-        transition={{ duration: 5, repeat: Infinity, repeatType: "mirror" }}
-      />
-
       {/* Heading */}
       <motion.h1
         className="text-4xl sm:text-5xl md:text-6xl font-bold text-white relative"
@@ -42,7 +34,7 @@ const Hero = () => {
       {/* Button */}
       <motion.a
         href="/projects"
-        className="mt-6 px-5 py-2 sm:px-6 sm:py-3 bg-primary text-white rounded-lg shadow-lg hover:shadow-orange-500/50 transition-all duration-300 hover:scale-110 text-sm sm:text-base"
+        className="mt-6 px-5 py-2 text-sm md:text-base font-medium text-white bg-white/10 border border-white/20 rounded-xl transition-all shadow-md hover:shadow-orange-500/50 duration-300 hover:scale-110 sm:text-base"
         initial={{ scale: 0.8 }}
         animate={{ scale: 1 }}
         transition={{ delay: 0.5, type: "spring", stiffness: 200 }}

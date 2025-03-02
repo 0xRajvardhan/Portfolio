@@ -8,10 +8,10 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <motion.header className="fixed top-4 left-1/2 transform -translate-x-1/2 w-[90%] md:w-[75%] flex justify-between items-center px-6 py-3 backdrop-blur-lg bg-white/10 shadow-lg rounded-full border border-white/20 transition-all z-50">
+    <motion.header className="fixed top-4 left-1/2 transform -translate-x-1/2 w-[90%] md:w-[75%] flex justify-between items-center px-6 py-3 backdrop-blur-lg bg-white/10 shadow-lg rounded-xl border border-white/20 transition-all z-50">
       {/* Logo */}
-      <h1 className="text-2xl font-extrabold text-white tracking-wide">
-        Rajvardhan <span className="text-primary">🚀</span>
+      <h1 className="text-2xl font-bold text-white tracking-wide">
+        Full-Stack Dev <span className="text-primary">🚀</span>
       </h1>
 
       {/* Desktop Nav */}
@@ -21,7 +21,7 @@ const Navbar = () => {
             <motion.span
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
-              className="px-4 py-2 text-sm md:text-base font-medium text-white bg-white/10 border border-white/20 rounded-full transition-all shadow-md hover:shadow-orange-500/50"
+              className="px-4 py-2 text-sm md:text-base font-medium text-white bg-white/10 border border-white/20 rounded-xl transition-all shadow-md hover:shadow-orange-500/50"
             >
               {item}
             </motion.span>
