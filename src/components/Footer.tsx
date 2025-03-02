@@ -9,7 +9,7 @@ export default function Footer() {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
-      className="fixed bottom-4 left-1/2 transform -translate-x-1/2 w-[90%] md:w-[75%] flex flex-col md:flex-row justify-center md:justify-between items-center px-6 py-4 backdrop-blur-lg bg-white/10 shadow-lg rounded-xl border border-white/20 transition-all"
+      className="fixed bottom-4 left-1/2 transform -translate-x-1/2 w-[90%] md:w-[75%] flex flex-col md:flex-row justify-center md:space-x-20 items-center px-6 py-4 backdrop-blur-lg bg-white/10 shadow-lg rounded-xl border border-white/20 transition-all"
     >
       {/* Name */}
       <motion.div
@@ -41,7 +41,7 @@ export default function Footer() {
           <FaLinkedin />
         </motion.a>
         <motion.a
-          href="https://github.com/rajvardhansd"
+          href="https://github.com/0xRajvardhan"
           target="_blank"
           rel="noopener noreferrer"
           whileHover={{ scale: 1.2 }}
