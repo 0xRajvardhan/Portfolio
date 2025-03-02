@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <section className="min-h-[85vh] flex flex-col justify-center items-center text-center px-6 relative overflow-hidden pb-24">
+    <section className="flex flex-col justify-center items-center text-center px-6 flex-grow relative overflow-hidden pb-16">
       {/* Heading */}
       <motion.h1
         className="text-4xl sm:text-5xl md:text-6xl font-bold text-white relative"

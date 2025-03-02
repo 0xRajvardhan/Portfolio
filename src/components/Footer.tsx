@@ -9,17 +9,12 @@ export default function Footer() {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
-      className="fixed bottom-4 left-1/2 transform -translate-x-1/2 w-[90%] md:w-[75%] flex flex-col md:flex-row justify-center md:space-x-20 items-center px-6 py-4 backdrop-blur-lg bg-white/10 shadow-lg rounded-xl border border-white/20 transition-all"
+      className="
+        relative w-full px-6 py-4 flex flex-col md:flex-row justify-center md:space-x-20 
+        items-center bg-white/10 backdrop-blur-lg shadow-lg rounded-xl border border-white/20 
+        transition-all md:bottom-4 md:left-1/2 md:-translate-x-1/2 md:w-[90%]
+      "
     >
-      {/* Name */}
-      <motion.div
-        className="text-lg font-semibold flex items-center space-x-2 text-white mb-3 md:mb-0"
-        initial={{ opacity: 0, y: 10 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-      >
-      </motion.div>
-
       {/* Social Links */}
       <div className="flex space-x-6 text-2xl">
         <motion.a

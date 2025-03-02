@@ -8,20 +8,29 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <motion.header className="fixed top-4 left-1/2 transform -translate-x-1/2 w-[90%] md:w-[75%] flex justify-between items-center px-6 py-3 backdrop-blur-lg bg-white/10 shadow-lg rounded-xl border border-white/20 transition-all z-50">
+    <motion.header
+      className="
+        w-full px-6 py-3 flex justify-between items-center 
+        bg-white/10 backdrop-blur-lg shadow-lg border border-white/20 rounded-xl
+        transition-all z-50 
+        md:fixed md:top-4 md:left-1/2 md:-translate-x-1/2 md:w-[90%]  
+      "
+    >
       {/* Logo */}
       <h1 className="text-2xl font-bold text-white tracking-wide">
         Full-Stack Dev <span className="text-primary">🚀</span>
       </h1>
 
-      {/* Desktop Nav */}
+      {/* Desktop Navigation */}
       <nav className="hidden md:flex gap-4">
         {["Home", "Projects", "Contacts"].map((item) => (
           <Link key={item} href={item === "Home" ? "/" : `/${item.toLowerCase()}`}>
             <motion.span
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
-              className="px-4 py-2 text-sm md:text-base font-medium text-white bg-white/10 border border-white/20 rounded-xl transition-all shadow-md hover:shadow-orange-500/50"
+              className="px-4 py-2 text-sm md:text-base font-medium text-white bg-white/10 
+              border border-white/20 rounded-xl transition-all shadow-md 
+              hover:shadow-orange-500/50"
             >
               {item}
             </motion.span>
@@ -44,18 +53,25 @@ const Navbar = () => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="absolute top-18 left-1/2 transform -translate-x-1/2 w-[85%] bg-slate/20 backdrop-blur-xl border border-white/20 shadow-lg rounded-xl p-4 flex flex-col items-center gap-3 md:hidden"
+            className="
+              absolute top-18 left-1/2 -translate-x-1/2 w-[90%] max-w-sm 
+              bg-white/10 backdrop-blur-xl border border-white/20 shadow-lg 
+              rounded-xl p-4 flex flex-col items-center gap-3 md:hidden
+            "
           >
             {["Home", "Projects", "Contacts"].map((item) => (
               <Link
                 key={item}
                 href={item === "Home" ? "/" : `/${item.toLowerCase()}`}
-                onClick={() => setIsOpen(false)} // 👈 Close menu on click
+                onClick={() => setIsOpen(false)} // Close menu on click
               >
                 <motion.span
                   whileHover={{ scale: 1.05, boxShadow: "0px 0px 12px rgba(255, 140, 0, 0.3)" }}
                   whileTap={{ scale: 0.95 }}
-                  className="px-6 py-1 text-white text-lg font-medium w-full text-center bg-white/10 rounded-lg hover:bg-white/20 transition-all"
+                  className="
+                    px-6 py-1 text-white text-lg font-medium w-full text-center 
+                    bg-white/10 rounded-lg hover:bg-white/20 transition-all
+                  "
                 >
                   {item}
                 </motion.span>
